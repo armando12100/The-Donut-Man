@@ -7,7 +7,7 @@ const Navbar = () => {
     "px-2 py-2.5",
     "hover:bg-cprimary-300 hover:text-csecond-100",
     "rounded-md transition",
-    isActive ? "bg-amber-200 text-white font-bold": "hover:underline font-bold"
+    isActive ? "bg-amber-200 text-white font-bold transition ease-in duration-500 h-12": "hover:underline font-bold"
   ].join(" ")
 
   return (
