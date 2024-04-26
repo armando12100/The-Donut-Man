@@ -1,4 +1,4 @@
-import Glendora from "../images/glendora.webp"
+import Glendora from "../images/glendora.jpg"
 import GrandCentralMarket from "../images/grandcentralmarket.jpg"
 
 export default [

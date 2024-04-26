@@ -14,7 +14,7 @@ const Locations = () => {
     );
   });
 
-  return <div className="flex justify-center">{cards}</div>;
+  return <div className="lg:flex lg:flex-row justify-center items-center flex flex-col">{cards}</div>;
 };
 
 export default Locations;
