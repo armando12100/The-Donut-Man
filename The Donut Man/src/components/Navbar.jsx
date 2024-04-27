@@ -17,11 +17,8 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   function toggleMenu() {
-    if (isMobile === false) {
-      setIsMobile((isMobile) => !isMobile);
-    } else {
-      setIsMobile(true);
-    }
+    setIsMobile((isMobile) => !isMobile);
+    console.log(isMobile);
   }
 
   function toggleAnywhere() {
@@ -63,8 +60,38 @@ const Navbar = () => {
         <NavLink to={"/"}>
           <img src={DonutManLogo} alt="logo" width={150} height={150} />
         </NavLink>
-        <img src={Hamburger} alt="" width={40} height={40}/>
+        <img
+          src={Hamburger}
+          alt=""
+          width={40}
+          height={40}
+          onClick={toggleMenu}
+        />
       </div>
+      {isMobile ? (
+        <div className="flex flex-col absolute right-0 bg-white">
+          <NavLink to={"/seasonal"} className={style} onClick={toggleAnywhere}>
+            Seasonal
+          </NavLink>
+          <NavLink to={"/market"} className={style} onClick={toggleAnywhere}>
+            Grand Central Market
+          </NavLink>
+          <NavLink to={"/menu"} className={style} onClick={toggleAnywhere}>
+            Menu
+          </NavLink>
+          <NavLink to={"/news"} className={style} onClick={toggleAnywhere}>
+            News
+          </NavLink>
+          <NavLink to={"/history"} className={style} onClick={toggleAnywhere}>
+            History
+          </NavLink>
+          <NavLink to={"/careers"} className={style} onClick={toggleAnywhere}>
+            Careers
+          </NavLink>
+        </div>
+      ) : (
+        <div></div>
+      )}
     </>
   );
 };
