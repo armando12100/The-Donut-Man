@@ -56,9 +56,9 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <div className="justify-between py-3 items-center px-2 flex md:hidden ">
+      <div className="justify-between py-3 items-center px-2 flex md:hidden transition duration-1000 ease-in-out">
         <NavLink to={"/"}>
-          <img src={DonutManLogo} alt="logo" width={150} height={150} />
+          <img src={DonutManLogo} alt="logo" width={150} height={150} className="hover:cursor-pointer"/>
         </NavLink>
         <img
           src={Hamburger}
@@ -66,6 +66,7 @@ const Navbar = () => {
           width={40}
           height={40}
           onClick={toggleMenu}
+          className="hover:cursor-pointer"
         />
       </div>
       {isMobile ? (
