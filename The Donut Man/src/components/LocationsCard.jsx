@@ -1,6 +1,6 @@
-const LocationsCard = ({ location, information, hours, image, key }) => {
+const LocationsCard = ({ location, hours, image,}) => {
   return (
-    <div className="justify-center my-3 w-80 shadow-2xl rounded-lg lg:w-96 mt-6 lg:mt-0">
+    <div className="justify-center my-3 w-80 shadow-2xl rounded-lg lg:w-96 mt-6 lg:mt-0 mx-2">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-center font-bold py-2">{location}</h1>
         <img src={image} alt="" width={300} className="object-cover w-72 h-48 rounded-lg" />

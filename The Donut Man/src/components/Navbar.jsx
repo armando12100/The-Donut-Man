@@ -45,9 +45,6 @@ const Navbar = () => {
         <NavLink to={"/menu"} className={style}>
           Photo Menu
         </NavLink>
-        <NavLink to={"/news"} className={style}>
-          News
-        </NavLink>
         <NavLink to={"/history"} className={style}>
           History
         </NavLink>
@@ -79,9 +76,6 @@ const Navbar = () => {
           </NavLink>
           <NavLink to={"/menu"} className={style} onClick={toggleAnywhere}>
             Menu
-          </NavLink>
-          <NavLink to={"/news"} className={style} onClick={toggleAnywhere}>
-            News
           </NavLink>
           <NavLink to={"/history"} className={style} onClick={toggleAnywhere}>
             History
