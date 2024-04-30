@@ -36,8 +36,8 @@ const Navbar = () => {
         <NavLink to={"/"}>
           <img src={DonutManLogo} alt="logo" width={200} height={200} />
         </NavLink>
-        <NavLink to={"/seasonal"} className={style}>
-          What&#39;s In Season
+        <NavLink to={"/featured"} className={style}>
+          Featured Items
         </NavLink>
         <NavLink to={"/market"} className={style}>
           Grand Central Market
@@ -71,8 +71,8 @@ const Navbar = () => {
       </div>
       {isMobile ? (
         <div className="flex flex-col absolute right-0 bg-white">
-          <NavLink to={"/seasonal"} className={style} onClick={toggleAnywhere}>
-            Seasonal
+          <NavLink to={"/featured"} className={style} onClick={toggleAnywhere}>
+            Featured Items
           </NavLink>
           <NavLink to={"/market"} className={style} onClick={toggleAnywhere}>
             Grand Central Market
