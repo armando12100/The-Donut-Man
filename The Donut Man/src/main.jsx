@@ -8,6 +8,7 @@ import History from './pages/History.jsx';
 import Careers from './pages/Careers.jsx';
 import Navbar from './components/Navbar.jsx'
 import FeaturedItems from './pages/FeaturedItems.jsx';
+import Application from './pages/Application.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/menu" element={<Menu />} />
       <Route path="/history" element={<History />} />
       <Route path="/careers" element={<Careers />} />
+      <Route path="/application" element={<Application />} />
     </Routes>
   </BrowserRouter>,
 )

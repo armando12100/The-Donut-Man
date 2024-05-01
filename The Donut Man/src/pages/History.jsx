@@ -3,8 +3,14 @@ import { useGSAP } from "@gsap/react";
 import Fosters from "../images/fostersdonuts.jpg"
 import strawberrydonut from "../images/strawberrydonut.jpg"
 import glendora from "../images/glendora.jpg"
+import { useRef } from "react";
+
+// gsap.registerPlugin(ScrollTrigger)
 
 const History = () => {
+
+  // const scrollRef = useRef();
+
   useGSAP(() => {
     gsap.fromTo("#paragraph", { opacity: 0, y:-30}, {opacity:1, duration: 1, y: 0});
     gsap.fromTo("#image", { opacity: 0, y:-30}, {opacity:1, duration: 1, y: 0});
