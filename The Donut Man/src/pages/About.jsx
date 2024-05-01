@@ -5,8 +5,8 @@ const About = () => {
   return (
     <>
       <div className="justify-center items-center flex flex-col relative">
-        <img src={gcmHeroPic} alt="" className="w-full opacity-95" />
-        <h1 className="text-9xl font-bold pb-8 absolute text-white left-10 bottom-0 italic">About Us</h1>
+        <img src={gcmHeroPic} alt="" className="object-cover w-full h-96 opacity-95 -z-10" />
+        <h1 className="text-7xl font-bold pb-8 absolute text-white left-10 bottom-0 italic">About Us</h1>
       </div>
 
       <div className="flex justify-center mt-20">
@@ -20,7 +20,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="bg-yellow-400 text-white font-bold py-6 px-10 flex justify-center">
+      <div className="bg-yellow-400 text-white font-bold py-6 px-10 flex justify-center mt-10">
         <p>Step into your local The Donut Man and sweeten up your day.</p>
       </div>
     </>
