@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 const DonutCard = (props) => {
   return (
     <>
-      <div className="justify-center my-3 w-96 shadow-2xl rounded-lg mt-6 lg:mt-0 mx-4 cursor-pointer">
+      <div className="justify-center my-3 w-96 shadow-2xl rounded-lg mt-6 
+      lg:mt-0 mx-4 cursor-pointer hover:scale-105 tranistion duration-200 mb-10">
         <div className="flex flex-col justify-center items-center pb-12">
           <h1 className="text-center font-bold pb-4">{props.name}</h1>
           <img

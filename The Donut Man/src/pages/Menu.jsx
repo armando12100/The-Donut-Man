@@ -23,7 +23,7 @@ const Menu = () => {
         <h1 className="font-bold text-2xl flex justify-center text-center pt-5 pb-10">Fav Items</h1>
       </div>
 
-      <div className="flex flex-wrap">
+      <div className="flex-wrap flex justify-center">
         {donuts}
       </div>
     </>
