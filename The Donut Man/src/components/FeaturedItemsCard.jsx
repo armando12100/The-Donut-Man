@@ -4,7 +4,8 @@ const FeaturedItemsCard = (props) => {
   return (
     <>
       <div className="justify-center my-3 w-96 shadow-2xl rounded-lg mt-6 lg:mt-0 mx-4 cursor-pointer">
-        <div className="flex flex-col justify-center items-center pb-12">
+        <div className="flex flex-col justify-center items-center pb-12 
+        hover:scale-105 transition duration-200 pt-2">
           <h1 className="text-center font-bold pb-4">{props.name}</h1>
           <img
             src={props.image}
