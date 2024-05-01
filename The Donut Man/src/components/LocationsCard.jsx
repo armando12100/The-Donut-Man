@@ -7,7 +7,8 @@ const LocationsCard = (props) => {
         <h1 className="text-center font-bold py-2">{props.location}</h1>
         <img src={props.image} alt="" width={300} className="object-cover w-72 h-48 rounded-lg" />
         <h1 className="pt-2 font-bold">{props.hours}</h1>
-        <button className="bg-yellow-400 font-bold text-white px-5 py-3 my-2 hover:bg-white cursor-pointer hover:text-yellow-400">Get Directions</button>
+        <button className="bg-yellow-400 font-bold text-white px-5 py-3 my-2 rounded-md
+         hover:bg-pink-300 cursor-pointer hover:text-white transition duration-200">Get Directions</button>
         {/* <h1 className="pl-2 w-4/6">{information}</h1> */}
       </div>
     </div>

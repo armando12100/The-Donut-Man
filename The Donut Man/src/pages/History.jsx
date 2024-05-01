@@ -3,7 +3,8 @@ import { useGSAP } from "@gsap/react";
 import Fosters from "../images/fostersdonuts.jpg"
 import strawberrydonut from "../images/strawberrydonut.jpg"
 import glendora from "../images/glendora.jpg"
-import { useRef } from "react";
+import HistoryPic from "../images/history.webp"
+// import { useRef } from "react";
 
 // gsap.registerPlugin(ScrollTrigger)
 
@@ -18,8 +19,15 @@ const History = () => {
 
   return (
     <>
-      <div className="flex justify-center -z-10">
-        <h1 className="text-4xl font-bold pb-10">History</h1>
+      <div className="justify-center items-center flex flex-col relative">
+        <img
+          src={HistoryPic}
+          alt=""
+          className="object-cover w-full h-96 opacity-95 -z-10"
+        />
+        <h1 className="text-7xl font-bold absolute left-10 bottom-6 text-white italic">
+          History
+        </h1>
       </div>
 
       <div className="flex justify-center">

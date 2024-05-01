@@ -11,7 +11,8 @@ const Banner = () => {
         </p>
         <p className="text-center pb-2">Open from 8am - 9pm everyday</p>
         <div className="justify-center flex pb-20">
-          <button className="bg-white text-yellow-300 font-bold px-5 py-2 hover:text-black cursor-pointer my-1 w-1/2">
+          <button className="bg-white text-yellow-300 font-bold px-5 py-2 hover:bg-pink-300 
+          hover:text-white transition duration-200 cursor-pointer my-1 w-1/2 rounded-md">
             Apply Now!
           </button>
         </div>

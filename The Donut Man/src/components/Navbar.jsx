@@ -43,7 +43,7 @@ const Navbar = () => {
           About Us
         </NavLink>
         <NavLink to={"/menu"} className={style}>
-          Photo Menu
+          Menu
         </NavLink>
         <NavLink to={"/history"} className={style}>
           History
