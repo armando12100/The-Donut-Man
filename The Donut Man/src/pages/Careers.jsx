@@ -16,8 +16,8 @@ const Careers = () => {
   return (
     <>
       <div className="justify-center items-center flex flex-col relative">
-        <img src={workerPic} alt="" className="object-cover w-full h-104 opacity-95" />
-        <h1 className="text-8xl font-bold absolute text-black">Careers</h1>
+        <img src={workerPic} alt="" className="object-cover w-full h-104 opacity-95 -z-10" />
+        <h1 className="text-9xl font-bold absolute left-10 bottom-6 text-white italic">Careers</h1>
       </div>
       <div className="flex text-center flex-col pt-5">
         <h1 className="font-bold text-4xl">Explore opportunities near you</h1>

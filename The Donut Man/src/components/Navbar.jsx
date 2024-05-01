@@ -39,8 +39,8 @@ const Navbar = () => {
         <NavLink to={"/featured"} className={style}>
           Featured Items
         </NavLink>
-        <NavLink to={"/market"} className={style}>
-          Grand Central Market
+        <NavLink to={"/about"} className={style}>
+          About Us
         </NavLink>
         <NavLink to={"/menu"} className={style}>
           Photo Menu
@@ -67,12 +67,12 @@ const Navbar = () => {
         />
       </div>
       {isMobile ? (
-        <div className="flex flex-col absolute right-0 bg-white">
+        <div className="flex flex-col absolute right-0 bg-white z-20">
           <NavLink to={"/featured"} className={style} onClick={toggleAnywhere}>
             Featured Items
           </NavLink>
-          <NavLink to={"/market"} className={style} onClick={toggleAnywhere}>
-            Grand Central Market
+          <NavLink to={"/about"} className={style} onClick={toggleAnywhere}>
+            About Us
           </NavLink>
           <NavLink to={"/menu"} className={style} onClick={toggleAnywhere}>
             Menu

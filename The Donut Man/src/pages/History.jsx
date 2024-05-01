@@ -18,7 +18,7 @@ const History = () => {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center -z-10">
         <h1 className="text-4xl font-bold pb-10">History</h1>
       </div>
 

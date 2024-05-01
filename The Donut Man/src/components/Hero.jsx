@@ -3,7 +3,7 @@ import HeroPic from "../images/heropic.jpg"
 
 const Hero = () => {
   return (
-    <div className="flex justify-center bg-yellow-50 pb-10">
+    <div className="flex justify-center pb-10">
       <img src={HeroPic} alt="" className="rounded-lg w-full md:h-102 xl:h-full"/>
     </div>
   )
