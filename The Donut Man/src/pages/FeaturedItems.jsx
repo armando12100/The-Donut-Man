@@ -1,8 +1,29 @@
 import FeaturedItemsCard from "../components/FeaturedItemsCard";
 import FeaturedDonutInfo from "../data/FeaturedDonutInfo";
 import SpecialDonuts from "../images/specialty.jpg";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all"
+
+
+gsap.registerPlugin(ScrollTrigger)
+
 
 const FeaturedItems = () => {
+
+  useGSAP(() => {
+    gsap.to("#title", {
+      scrollTrigger: {
+        trigger: "trigger",
+        scrub: true,
+      },
+      y: -100,
+      ease: "none",
+      duration: 1
+    });
+  }, []);
+
+
   const cards = FeaturedDonutInfo.map((item) => {
     return (
       <FeaturedItemsCard key={item.key} name={item.name} image={item.image} />
@@ -16,7 +37,7 @@ const FeaturedItems = () => {
           alt=""
           className="object-cover w-full h-96 opacity-95 -z-10"
         />
-        <h1 className="text-7xl font-bold absolute left-10 bottom-6 text-white italic">
+        <h1 className="text-7xl font-bold absolute left-10 bottom-6 text-white italic" id="title">
           Featured Items
         </h1>
       </div>

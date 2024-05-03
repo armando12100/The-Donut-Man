@@ -1,12 +1,32 @@
 import gcmHeroPic from "../images/gcmHeroPic.jpeg"
 import gcmParagraphPic from "../images/gcmParagraphPic.jpg"
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all"
+
+
+gsap.registerPlugin(ScrollTrigger)
 
 const About = () => {
+
+  useGSAP(() => {
+    gsap.to("#title", {
+      scrollTrigger: {
+        trigger: "trigger",
+        scrub: true,
+      },
+      y: -100,
+      ease: "none",
+      duration: 2
+    });
+  }, []);
+
   return (
     <>
       <div className="justify-center items-center flex flex-col relative">
         <img src={gcmHeroPic} alt="" className="object-cover w-full h-96 opacity-95 -z-10" />
-        <h1 className="text-7xl font-bold pb-8 absolute text-white left-10 bottom-0 italic">About Us</h1>
+        <h1 className="text-7xl font-bold pb-8 absolute text-white 
+        left-10 bottom-0 italic" id="title">About Us</h1>
       </div>
 
       <div className="flex justify-center mt-20">

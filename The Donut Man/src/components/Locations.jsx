@@ -10,6 +10,7 @@ const Locations = () => {
         hours={item.hours}
         image={item.image}
         information={item.information}
+        maps={item.maps}
       />
     );
   });

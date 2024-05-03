@@ -8,6 +8,6 @@
     }
 
     .input {
-        @apply ml-2 w-20 md:w-36
+        @apply ml-2 w-20 md:w-36 border-white border rounded-md
     }
   }
