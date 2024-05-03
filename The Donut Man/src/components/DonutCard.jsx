@@ -21,7 +21,7 @@ const DonutCard = (props) => {
 
 DonutCard.propTypes = {
   name: PropTypes.string,
-  donut: PropTypes.image,
+  donut: PropTypes.string,
 };
 
 export default DonutCard;

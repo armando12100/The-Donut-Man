@@ -13,7 +13,6 @@ const Menu = () => {
   useGSAP(() => {
     gsap.to("#title", {
       scrollTrigger: {
-        trigger: "trigger",
         scrub: true,
       },
       y: -800,

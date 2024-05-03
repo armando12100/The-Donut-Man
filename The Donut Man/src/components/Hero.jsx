@@ -11,7 +11,6 @@ const Hero = () => {
   useGSAP(() => {
     gsap.to("#title", {
       scrollTrigger: {
-        trigger: "trigger",
         scrub: true,
       },
       y: -125,

@@ -29,7 +29,7 @@ const FeaturedItemsCard = (props) => {
 
 FeaturedItemsCard.propTypes = {
   name: PropTypes.string,
-  image: PropTypes.image
+  image: PropTypes.string
 }
 
 export default FeaturedItemsCard

@@ -21,7 +21,7 @@ const LocationsCard = (props) => {
 
 LocationsCard.propTypes = {
   location: PropTypes.string,
-  image: PropTypes.image,
+  image: PropTypes.string,
   hours: PropTypes.string,
   maps: PropTypes.string
 }

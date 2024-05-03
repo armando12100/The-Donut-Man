@@ -14,7 +14,6 @@ const FeaturedItems = () => {
   useGSAP(() => {
     gsap.to("#title", {
       scrollTrigger: {
-        trigger: "trigger",
         scrub: true,
       },
       y: -100,
