@@ -14,8 +14,6 @@ const Careers = () => {
   useGSAP(() => {
     gsap.to("#title", {
       scrollTrigger: {
-        scrub: true,
-        markers: true
       },
       y: -800,
       ease: "none",
